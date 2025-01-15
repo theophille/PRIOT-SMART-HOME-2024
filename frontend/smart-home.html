@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Dashboard</title>
+    <link rel="stylesheet" href="smart-home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3"></script>
+</head>
+<body>
+    <script type="module" src="smart-home.js"></script>
+    <script type="module" src="charts.js"></script>
+    <div class="header"> SMART HOME IOT </div>
+    <div class="container">
+        <section class="real-time-data">
+            <h1>Real Time</h1>
+            <div class="current flex">
+                <div class="temperature">
+                    <img src="assets/hot.png" alt="term.png" width="50px">
+                    <span id="real-temp">24 deg C</span>
+                </div>
+                <div class="humid">
+                    <img src="assets/humidity.png" alt="humid.png" width="50px">
+                    <span id="real-humid">95%</span>
+                </div>
+            </div>
+        </section>
+        <section class="ac">
+            <h1> AC </h1>
+            <div class="current toggles">
+                <button id="fan-mode" class="button">Hello</button>
+                <button id="fan-state" class="button">Dolly</button>
+            </div>
+        </section>
+        <section class="light">
+            <h1> Light </h1>
+            <div class="current light-control">
+                <button id="led-state" class="button">On</button>
+                <input id="color-picker" type="color" class="custom-input">
+            </div>
+        </section>
+        <section class="graphs">
+            <h1> Graphs </h1>
+            <div class="current graph-panels">
+                <div class="temp-side">
+                    <h2>Temperature</h2>
+                    <canvas id="temperature-graph" height="200px"></canvas>
+                </div>
+            </div>
+            <div class="current">
+                <div class="humid-side">
+                    <h2>Humidity</h2>
+                    <canvas id="humidity-graph" height="200px"></canvas>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "chart.js": "^4.4.7",
+    "chartjs": "^0.3.24",
+    "firebase": "^11.1.0"
+  },
+  "type": "module"
+}

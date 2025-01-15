@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    color: #ffffff;
+}
+
+body {
+    background-color: #181818;
+}
+
+.header {
+    background-color: #000000;
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+
+.container {
+    padding: 0 800px;
+    margin-bottom: 50px;
+}
+
+.real-time-data {
+    margin-top: 30px;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+}
+
+h1 {
+    font-size: 35px;
+    margin: 10px 0;
+    margin-top: 30px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.current {
+    width: 100%;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.temperature, .humid {
+    display: flex;
+}
+
+.humid > span, .temperature > span {
+    margin-left: 15px;
+}
+
+.toggles, .light-control {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    background-color: #181818;
+    border: none;
+    border-radius: 5px;
+    flex-grow: 1;
+    transition: 300ms;
+}
+
+.button:hover {
+    background-color: #000000;
+}
+
+.active-button {
+    background-color: #e5394b;
+}
+
+.hidden {
+    display: none;
+}
+
+.custom-input {
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 0 10px;
+    font-size: 16px;
+    outline: none;
+    flex-grow: 0.3;
+}
+
+.custom-input[type="color"] {
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 0;
+    width: 40px;
+    cursor: pointer;
+}
+
+.custom-input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.custom-input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+.temp-side, .humid-side {
+    flex-grow: 1;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 1920px) {
+    .container {
+        padding: 0 300px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .container {
+        padding: 0 100px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        padding: 0 20px;
+    }
+}
